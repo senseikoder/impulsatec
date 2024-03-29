@@ -1,0 +1,32 @@
+// Set your brand colors
+$orange: #ff7100;
+$black: #1e1e1e;
+$orange-light: #f6b077;
+$orange-dark: #b25305;
+
+
+// Override global Sass variables from the /utilities folder
+@use "bulma/sass" with (
+  $family-primary: '"Nunito", sans-serif',
+  $primary: $orange,
+  $link: $orange-dark,
+  $control-border-width: 2px,
+);
+
+// Import the themes so that all CSS variables have a value
+@forward "bulma/sass/themes/light";
+
+// Import the Google Font
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,500,600,700");
+
+:root {
+  --bulma-body-size: 1.2em;
+}
+
+.navbar {
+  --bulma-navbar-item-img-max-height: 115px;
+}
+
+strong {
+  --bulma-strong-weight: var(--bulma-weight-bold)
+}

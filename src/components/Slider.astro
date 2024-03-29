@@ -1,0 +1,158 @@
+---
+import "/node_modules/reveal.js/dist/reveal.css";
+// import "/node_modules/reveal.js/dist/theme/simple.css";
+---
+
+<section class="hero is-medium is-dark banner">
+   <div class="is-overlay"></div>
+   <div class="hero-body">
+      <div class="container">
+         <div class="columns is-vcentered">
+            <div class="column is-7 p-3">
+               <!-- Reveal Slides -->
+               <div class="reveal">
+                  <div class="slides">
+                     <section>
+                        <h1 class="title is-2 is-bold is-spaced">
+                           Programa en tecnología para trabajar y estudiar en
+                           España
+                        </h1>
+
+                        <h2 class="subtitle is-5 is-bold is-spaced">
+                           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam veritatis facilis commodi voluptatum cum. Cum est ut voluptate eius ex deleniti accusamus exercitationem dolores necessitatibus recusandae.
+                        </h2>
+
+                        <a
+                           href="#"
+                           class="button is-primary is-rounded is-medium"
+                           >Solicita Información</a
+                        >
+                     </section>
+
+                     <section>
+                        <h1 class="title is-2 is-bold is-spaced">
+                           Estudia y trabaja en España
+                        </h1>
+                        <h2 class="title is-4 is-bold is-spaced">
+                           Impulsa y acelera tu integración en el mercado
+                           tecnológico de la Unión Europea
+                        </h2>
+                        <h3 class="subtitle is-5">
+                           Con Impulstaec podrás, trabajar, estudiar y
+                           desarrollarte tecnológicamente en el mercado de
+                           Europa con base en España
+                        </h3>
+
+                        <a
+                           href="#"
+                           class="button is-primary is-rounded is-medium"
+                           >Solicita Información</a
+                        >
+                     </section>
+
+                     <section>
+                        <h1 class="title is-2 is-bold is-spaced">
+                           Impulsatec realizará:
+                        </h1>
+
+                        <ul class="list is-size-6 mb-5 has-text-white">
+                           <li>Formación tecnológica para eltrabajo</li>
+                           <li>Tramitación de la homologación de estudios</li>
+                           <li>
+                              Inscripción en la universidad o en el instituto de
+                              Formación Profesional de tu elección
+                           </li>
+                           <li>
+                              Inscripción en residencia estudiantil de tu
+                              elección
+                           </li>
+                           <li>
+                              Tramitación de la Visa de estudiante con permiso
+                              de trabajo
+                           </li>
+                        </ul>
+
+                        <a
+                           href="#"
+                           class="button is-primary is-rounded is-medium"
+                           >Solicita Información</a
+                        >
+                     </section>
+                  </div>
+               </div>
+
+               <!-- end Reveal -->
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+
+<script>
+   import Reveal from "reveal.js";
+
+   // document.addEventListener("astro:page-load", () => {
+   const elem = document.querySelector(".reveal");
+
+   let deck = new Reveal({
+      controls: false,
+      progress: false,
+      autoSlide: 2000,
+      loop: true,
+      disableLayout: true,
+      transition: "fade",
+      embedded: true,
+      autoSlideStoppable: false,
+   });
+   deck.initialize();
+   // });
+</script>
+
+<style is:global>
+   .reveal-viewport {
+      background-color: transparent;
+   }
+   .reveal.center {
+      min-height: 370px !important;
+   }
+
+   .reveal .slides {
+      text-align: left;
+   }
+
+   .reveal h1,
+   .reveal h2,
+   .reveal h3,
+   .reveal h4,
+   .reveal h5,
+   .reveal h6 {
+      text-transform: none;
+      line-height: unset;
+   }
+
+   /* @media (max-width: 767px) {
+      .reveal.center {
+         min-height: 300px !important;
+         margin-top: 3rem;
+      }
+
+   } */
+</style>
+
+<style>
+   .banner {
+      background: url("/img/banner-home.webp") center no-repeat;
+      background-size: cover;
+      position: relative;
+   }
+
+   .is-overlay {
+      background-color: rgba(46, 47, 52, 0.60);
+   }
+
+   .list {
+      margin-left: 1.4rem;
+      line-height: 1.4;
+      list-style: disc;
+   }
+</style>
