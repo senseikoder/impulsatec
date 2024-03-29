@@ -23,6 +23,10 @@ $orange-dark: #b25305;
   --bulma-body-size: 1.2em;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .navbar {
   --bulma-navbar-item-img-max-height: 115px;
 }
