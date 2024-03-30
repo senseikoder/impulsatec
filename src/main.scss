@@ -6,8 +6,7 @@ $orange-dark: #b25305;
 
 
 // Override global Sass variables from the /utilities folder
-@use "bulma/sass" with (
-  $family-primary: '"Nunito", sans-serif',
+@use "bulma/sass" with ($family-primary: '"Nunito", sans-serif',
   $primary: $orange,
   $link: $orange-dark,
   $control-border-width: 2px,
@@ -33,4 +32,14 @@ html {
 
 strong {
   --bulma-strong-weight: var(--bulma-weight-bold)
+}
+
+
+.acordeon .card {
+  margin-top: 20px;
+  border-radius: 0;
+}
+
+.acordeon .card-header {
+  cursor: pointer;
 }

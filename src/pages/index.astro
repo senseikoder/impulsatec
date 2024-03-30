@@ -19,3 +19,14 @@ import Seccion5 from "../components/Seccion5.astro";
 	<Seccion4 />
 	<Seccion5 />
 </Layout>
+
+<script>
+	let cardToggles = document.getElementsByClassName("card-header");
+	for (let i = 0; i < cardToggles.length; i++) {
+		cardToggles[i].addEventListener("click", (e) => {
+			e.currentTarget.parentElement.children[1].classList.toggle(
+				"is-hidden",
+			);
+		});
+	}
+</script>
