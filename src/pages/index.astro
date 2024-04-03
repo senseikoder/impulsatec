@@ -6,6 +6,7 @@ import Seccion2 from "../components/Seccion2.astro";
 import Seccion3 from "../components/Seccion3.astro";
 import Seccion4 from "../components/Seccion4.astro";
 import Seccion5 from "../components/Seccion5.astro";
+import Contact from "../components/Contact.astro";
 ---
 
 <Layout title="ImpulsaTec - Estudia y trabaja en España">
@@ -16,11 +17,16 @@ import Seccion5 from "../components/Seccion5.astro";
 	<Seccion2 />
 
 	<Seccion3 />
+
 	<Seccion4 />
+
 	<Seccion5 />
+	
+	<Contact />
 </Layout>
 
 <script>
+	// codigo para acordeons
 	let cardToggles = document.getElementsByClassName("card-header");
 	for (let i = 0; i < cardToggles.length; i++) {
 		cardToggles[i].addEventListener("click", (e) => {
