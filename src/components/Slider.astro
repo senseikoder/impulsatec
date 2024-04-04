@@ -25,11 +25,18 @@ import "/node_modules/reveal.js/dist/reveal.css";
                            exercitationem dolores necessitatibus recusandae.
                         </h2> -->
 
-                        <a
-                           href="#contacto"
-                           class="button is-primary is-rounded is-medium"
-                           >Solicita Información</a
-                        >
+                        <div class="buttons">
+                           <a
+                              href="https://wa.me/+34657930351"
+                              class="button is-success is-rounded is-medium"
+                              >Whatsapp</a
+                           >
+                           <a
+                              href="#contacto"
+                              class="button is-primary is-rounded is-medium"
+                              >Solicita Información</a
+                           >
+                        </div>
                      </section>
 
                      <section>
@@ -46,11 +53,18 @@ import "/node_modules/reveal.js/dist/reveal.css";
                            Europa con base en España
                         </h3>
 
-                        <a
-                           href="#contacto"
-                           class="button is-primary is-rounded is-medium"
-                           >Solicita Información</a
-                        >
+                        <div class="buttons">
+                           <a
+                              href="https://wa.me/+34657930351"
+                              class="button is-success is-rounded is-medium"
+                              >Whatsapp</a
+                           >
+                           <a
+                              href="#contacto"
+                              class="button is-primary is-rounded is-medium"
+                              >Solicita Información</a
+                           >
+                        </div>
                      </section>
 
                      <section>
@@ -59,7 +73,7 @@ import "/node_modules/reveal.js/dist/reveal.css";
                         </h1>
 
                         <ul class="list is-size-6 mb-5 has-text-white">
-                           <li>Formación tecnológica para eltrabajo</li>
+                           <li>Formación tecnológica para el trabajo</li>
                            <li>Tramitación de la homologación de estudios</li>
                            <li>
                               Inscripción en la universidad o en el instituto de
@@ -75,11 +89,18 @@ import "/node_modules/reveal.js/dist/reveal.css";
                            </li>
                         </ul>
 
-                        <a
-                           href="#contacto"
-                           class="button is-primary is-rounded is-medium"
-                           >Solicita Información</a
-                        >
+                        <div class="buttons">
+                           <a
+                              href="https://wa.me/+34657930351"
+                              class="button is-success is-rounded is-medium"
+                              >Whatsapp</a
+                           >
+                           <a
+                              href="#contacto"
+                              class="button is-primary is-rounded is-medium"
+                              >Solicita Información</a
+                           >
+                        </div>
                      </section>
                   </div>
                </div>
@@ -93,23 +114,20 @@ import "/node_modules/reveal.js/dist/reveal.css";
 
 <script>
    import Reveal from "reveal.js";
-   
 
+   const elem = document.querySelector(".reveal");
 
-      const elem = document.querySelector(".reveal");
-   
-      let deck = new Reveal({
-         controls: false,
-         progress: false,
-         autoSlide: 2000,
-         loop: true,
-         disableLayout: true,
-         transition: "fade",
-         embedded: true,
-         autoSlideStoppable: false,
-      });
-      deck.initialize();
-
+   let deck = new Reveal({
+      controls: false,
+      progress: false,
+      autoSlide: 4500,
+      loop: true,
+      disableLayout: true,
+      transition: "fade",
+      embedded: true,
+      autoSlideStoppable: false,
+   });
+   deck.initialize();
 </script>
 
 <style is:global>
