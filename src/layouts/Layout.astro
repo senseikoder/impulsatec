@@ -20,7 +20,11 @@ const { title } = Astro.props;
 		<title>{title}</title>
 		<!-- Begin Brevo Form -->
 		<!-- START - We recommend to place the below code in head tag of your website html -->
-		<style>
+		<link
+			rel="stylesheet"
+			href="https://sibforms.com/forms/end-form/build/sib-styles.css"
+		/>
+		<style is:global>
 			@font-face {
 				font-display: block;
 				font-family: Roboto;
@@ -69,11 +73,12 @@ const { title } = Astro.props;
 				text-decoration: underline;
 				color: #2bb2fc;
 			}
+
+			.sib-form {
+				padding: 2px 12px 2px;
+			}
 		</style>
-		<link
-			rel="stylesheet"
-			href="https://sibforms.com/forms/end-form/build/sib-styles.css"
-		/>
+
 		<!-- END - We recommend to place the above code in head tag of your website html -->
 	</head>
 	<body>
