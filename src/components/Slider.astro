@@ -93,22 +93,23 @@ import "/node_modules/reveal.js/dist/reveal.css";
 
 <script>
    import Reveal from "reveal.js";
+   
 
-   // document.addEventListener("astro:page-load", () => {
-   const elem = document.querySelector(".reveal");
 
-   let deck = new Reveal({
-      controls: false,
-      progress: false,
-      autoSlide: 2000,
-      loop: true,
-      disableLayout: true,
-      transition: "fade",
-      embedded: true,
-      autoSlideStoppable: false,
-   });
-   deck.initialize();
-   // });
+      const elem = document.querySelector(".reveal");
+   
+      let deck = new Reveal({
+         controls: false,
+         progress: false,
+         autoSlide: 2000,
+         loop: true,
+         disableLayout: true,
+         transition: "fade",
+         embedded: true,
+         autoSlideStoppable: false,
+      });
+      deck.initialize();
+
 </script>
 
 <style is:global>
