@@ -13,7 +13,9 @@ import "/node_modules/reveal.js/dist/reveal.css";
                <div class="reveal">
                   <div class="slides">
                      <section>
-                        <h1 class="title is-2 is-bold is-spaced">
+                        <h1
+                           class="title is-2 is-size-3-mobile is-bold is-spaced"
+                        >
                            Programa en tecnología para trabajar y estudiar en
                            España 🇪🇸
                         </h1>
@@ -40,14 +42,18 @@ import "/node_modules/reveal.js/dist/reveal.css";
                      </section>
 
                      <section>
-                        <h1 class="title is-2 is-bold is-spaced">
+                        <h1
+                           class="title is-2 is-size-3-mobile is-bold is-spaced"
+                        >
                            Estudia y trabaja en España 🇪🇸
                         </h1>
-                        <h2 class="title is-4 is-bold is-spaced">
+                        <h2
+                           class="title is-4 is-size-5-mobile is-bold is-spaced"
+                        >
                            Impulsa y acelera tu integración en el mercado
                            tecnológico de la Unión Europea
                         </h2>
-                        <h3 class="subtitle is-5">
+                        <h3 class="subtitle is-5 is-size-6-mobile">
                            Con Impulstaec podrás, trabajar, estudiar y
                            desarrollarte tecnológicamente en el mercado de
                            Europa con base en España
@@ -68,11 +74,15 @@ import "/node_modules/reveal.js/dist/reveal.css";
                      </section>
 
                      <section>
-                        <h1 class="title is-2 is-bold is-spaced">
+                        <h1
+                           class="title is-2 is-size-3-mobile is-bold is-spaced"
+                        >
                            Impulsatec realizará:
                         </h1>
 
-                        <ul class="list is-size-6 mb-5 has-text-white">
+                        <ul
+                           class="list is-size-6 is-size-7-mobile mb-5 has-text-white"
+                        >
                            <li>Formación tecnológica para el trabajo</li>
                            <li>Tramitación de la homologación de estudios</li>
                            <li>
@@ -128,8 +138,6 @@ import "/node_modules/reveal.js/dist/reveal.css";
       autoSlideStoppable: false,
    });
    deck.initialize();
-
-
 
    const banner = document.querySelector(".banner");
    const images = [
@@ -207,11 +215,14 @@ import "/node_modules/reveal.js/dist/reveal.css";
       line-height: unset;
    }
 
-   /* @media (max-width: 767px) {
+   @media (max-width: 767px) {
       .reveal.center {
-         min-height: 300px !important;
-         margin-top: 3rem;
+         min-height: 450px !important;
+         /* margin-top: 2rem; */
       }
 
-   } */
+      .button {
+         width: 100%;
+      }
+   }
 </style>
