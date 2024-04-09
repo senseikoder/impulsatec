@@ -15,7 +15,7 @@ import "/node_modules/reveal.js/dist/reveal.css";
                      <section>
                         <h1 class="title is-2 is-bold is-spaced">
                            Programa en tecnología para trabajar y estudiar en
-                           España
+                           España 🇪🇸
                         </h1>
 
                         <!-- <h2 class="subtitle is-5 is-bold is-spaced">
@@ -41,7 +41,7 @@ import "/node_modules/reveal.js/dist/reveal.css";
 
                      <section>
                         <h1 class="title is-2 is-bold is-spaced">
-                           Estudia y trabaja en España
+                           Estudia y trabaja en España 🇪🇸
                         </h1>
                         <h2 class="title is-4 is-bold is-spaced">
                            Impulsa y acelera tu integración en el mercado
@@ -120,7 +120,7 @@ import "/node_modules/reveal.js/dist/reveal.css";
    let deck = new Reveal({
       controls: false,
       progress: false,
-      autoSlide: 4500,
+      autoSlide: 4000,
       loop: true,
       disableLayout: true,
       transition: "fade",
@@ -163,9 +163,29 @@ import "/node_modules/reveal.js/dist/reveal.css";
 
 <style>
    .banner {
-      background: url("/img/banner-home.webp") center no-repeat;
+      background-image: url("/img/slider-2.webp");
+      background-color: aliceblue;
+      background-position: center;
+      background-repeat: no-repeat;
       background-size: cover;
       position: relative;
+      animation: slider 12s ease-in-out infinite;
+      /* transition: background-image .3s ease-in-out; */
+   }
+
+   @keyframes slider {
+      0% {
+         background-image: url("/img/slider-2.webp");
+      }
+      33% {
+         background-image: url("/img/slider-3.webp");
+      }
+      66% {
+         background-image: url("/img/slider-4.webp");
+      }
+      100% {
+         background-image: url("/img/slider-2.webp");
+      }
    }
 
    .is-overlay {
