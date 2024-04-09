@@ -30,6 +30,7 @@ import Contact from "../components/Contact.astro";
 	let cardToggles = document.getElementsByClassName("card-header");
 	for (let i = 0; i < cardToggles.length; i++) {
 		cardToggles[i].addEventListener("click", (e) => {
+			e.currentTarget.children[1].children[0].classList.toggle("close")
 			e.currentTarget.parentElement.children[1].classList.toggle(
 				"is-hidden",
 			);

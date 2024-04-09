@@ -127,7 +127,7 @@ import "/node_modules/reveal.js/dist/reveal.css";
    let deck = new Reveal({
       controls: false,
       progress: false,
-      autoSlide: 4000,
+      autoSlide: 6000,
       loop: true,
       disableLayout: true,
       transition: "fade",
@@ -149,7 +149,7 @@ import "/node_modules/reveal.js/dist/reveal.css";
       banner.style.backgroundImage = `url(${images[currentIndex]})`;
    }
 
-   setInterval(changeBackground, 4000); // Cambia la imagen cada 5 segundos (5000 milisegundos)
+   setInterval(changeBackground, 6000); // Cambia la imagen cada 5 segundos (5000 milisegundos)
 
    function getFlagEmoji(countryCode) {
       const codePoints = countryCode
@@ -168,23 +168,7 @@ import "/node_modules/reveal.js/dist/reveal.css";
       background-repeat: no-repeat;
       background-size: cover;
       position: relative;
-      /* animation: slider 12s ease-in-out infinite; */
       transition: background-image 0.5s ease-in-out;
-   }
-
-   @keyframes slider {
-      0% {
-         background-image: url("/img/slider-2.webp");
-      }
-      33% {
-         background-image: url("/img/slider-3.webp");
-      }
-      66% {
-         background-image: url("/img/slider-4.webp");
-      }
-      100% {
-         background-image: url("/img/slider-2.webp");
-      }
    }
 
    .is-overlay {
