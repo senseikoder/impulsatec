@@ -128,7 +128,62 @@ import "/node_modules/reveal.js/dist/reveal.css";
       autoSlideStoppable: false,
    });
    deck.initialize();
+
+
+
+   const banner = document.querySelector(".banner");
+   const images = [
+      "/img/slider-2.webp",
+      "/img/slider-3.webp",
+      "/img/slider-4.webp",
+   ];
+   let currentIndex = 0;
+
+   function changeBackground() {
+      currentIndex = (currentIndex + 1) % images.length;
+      banner.style.backgroundImage = `url(${images[currentIndex]})`;
+   }
+
+   setInterval(changeBackground, 4000); // Cambia la imagen cada 5 segundos (5000 milisegundos)
 </script>
+
+<style>
+   .banner {
+      background-image: url("/img/slider-2.webp");
+      background-color: aliceblue;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+      /* animation: slider 12s ease-in-out infinite; */
+      transition: background-image 0.5s ease-in-out;
+   }
+
+   @keyframes slider {
+      0% {
+         background-image: url("/img/slider-2.webp");
+      }
+      33% {
+         background-image: url("/img/slider-3.webp");
+      }
+      66% {
+         background-image: url("/img/slider-4.webp");
+      }
+      100% {
+         background-image: url("/img/slider-2.webp");
+      }
+   }
+
+   .is-overlay {
+      background-color: rgba(46, 47, 52, 0.6);
+   }
+
+   .list {
+      margin-left: 1.4rem;
+      line-height: 1.4;
+      list-style: disc;
+   }
+</style>
 
 <style is:global>
    .reveal-viewport {
@@ -159,42 +214,4 @@ import "/node_modules/reveal.js/dist/reveal.css";
       }
 
    } */
-</style>
-
-<style>
-   .banner {
-      background-image: url("/img/slider-2.webp");
-      background-color: aliceblue;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      position: relative;
-      animation: slider 12s ease-in-out infinite;
-      /* transition: background-image .3s ease-in-out; */
-   }
-
-   @keyframes slider {
-      0% {
-         background-image: url("/img/slider-2.webp");
-      }
-      33% {
-         background-image: url("/img/slider-3.webp");
-      }
-      66% {
-         background-image: url("/img/slider-4.webp");
-      }
-      100% {
-         background-image: url("/img/slider-2.webp");
-      }
-   }
-
-   .is-overlay {
-      background-color: rgba(46, 47, 52, 0.6);
-   }
-
-   .list {
-      margin-left: 1.4rem;
-      line-height: 1.4;
-      list-style: disc;
-   }
 </style>
