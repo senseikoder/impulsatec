@@ -17,7 +17,7 @@ import "/node_modules/reveal.js/dist/reveal.css";
                            class="title is-2 is-size-3-mobile is-bold is-spaced"
                         >
                            Programa en tecnología para trabajar y estudiar en
-                           España 🇪🇸
+                           España <img src="img/bandera.png" alt="España" />
                         </h1>
 
                         <!-- <h2 class="subtitle is-5 is-bold is-spaced">
@@ -42,19 +42,18 @@ import "/node_modules/reveal.js/dist/reveal.css";
                      </section>
 
                      <section>
-                        <h1
-                           class="title is-2 is-size-3-mobile is-bold"
-                        >
-                           Estudia y trabaja en España 🇪🇸
+                        <h1 class="title is-2 is-size-3-mobile is-bold">
+                           Estudia y trabaja en España <img
+                              src="img/bandera.png"
+                              alt="España"
+                           />
                         </h1>
-                        <h2
-                           class="title is-4 is-size-5-mobile is-bold my-2"
-                        >
+                        <h2 class="title is-4 is-size-5-mobile is-bold my-2">
                            Impulsa y acelera tu integración en el mercado
                            tecnológico de la Unión Europea
                         </h2>
                         <h3 class="subtitle is-5 is-size-6-mobile">
-                           Con Impulstaec podrás, trabajar, estudiar y
+                           Con Impulsatec podrás, trabajar, estudiar y
                            desarrollarte tecnológicamente en el mercado de
                            Europa con base en España
                         </h3>
@@ -74,9 +73,7 @@ import "/node_modules/reveal.js/dist/reveal.css";
                      </section>
 
                      <section>
-                        <h1
-                           class="title is-2 is-size-3-mobile is-bold"
-                        >
+                        <h1 class="title is-2 is-size-3-mobile is-bold">
                            Impulsatec realizará:
                         </h1>
 
@@ -153,6 +150,14 @@ import "/node_modules/reveal.js/dist/reveal.css";
    }
 
    setInterval(changeBackground, 4000); // Cambia la imagen cada 5 segundos (5000 milisegundos)
+
+   function getFlagEmoji(countryCode) {
+      const codePoints = countryCode
+         .toUpperCase()
+         .split("")
+         .map((char) => 127397 + char.charCodeAt());
+      return String.fromCodePoint(...codePoints);
+   }
 </script>
 
 <style>
