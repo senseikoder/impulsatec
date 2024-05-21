@@ -1,0 +1,71 @@
+<div class="modal">
+   <div class="modal-background"></div>
+   <div class="modal-content p-3 has-background-white">
+      <div class="is-overlay is-hidden-desktop"></div>
+      <div class="columns">
+         <div class="column is-5 is-offset-7">
+            <div class="content my-6 is-relative">
+               <h3 class="title is-4">
+                  Logra el éxito como Freelancer en Fiverr
+               </h3>
+               <p class="is-size-5">
+                  Inicia tu negocio en casa o un negocio secundario. ¡No se
+                  necesita experiencia!
+               </p>
+
+               <a href="/curso-freelancer" class="button is-primary is-medium"
+                  >QUIERO UNIRME</a
+               >
+            </div>
+         </div>
+      </div>
+   </div>
+   <button class="modal-close is-large" aria-label="close"></button>
+</div>
+
+<style>
+   .modal-content {
+      border-radius: 10px;
+      background: url("img/bg-modal.webp") center / cover;
+   }
+
+   .is-overlay {
+      background-color: rgba(240, 255, 255, 0.8);
+   }
+
+   @media (max-width: 575px) {
+      .modal-content {
+         /* background: url("img/bg-modal-mobile.webp") center / cover;
+
+         background-position: 120% center; */
+      }
+   }
+</style>
+
+<script>
+   document.addEventListener("DOMContentLoaded", () => {
+      const modal = document.querySelector(".modal");
+      const $close = document.querySelector(".modal-close");
+
+      // Functions to open and close a modal
+      function openModal($el) {
+         $el.classList.add("is-active");
+      }
+
+      function closeModal($el) {
+         $el.classList.remove("is-active");
+      }
+
+      (
+         document.querySelectorAll(".modal-background, .modal-close") || []
+      ).forEach(($close) => {
+         $close.addEventListener("click", () => {
+            closeModal(modal);
+         });
+      });
+
+      setTimeout(() => {
+         openModal(modal);
+      }, 4000);
+   });
+</script>
