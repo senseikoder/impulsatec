@@ -1,19 +1,19 @@
 <div class="modal">
    <div class="modal-background"></div>
-   <div class="modal-content p-3 has-background-white">
+   <div class="modal-content p-5 has-background-white">
       <div class="is-overlay is-hidden-desktop"></div>
       <div class="columns">
          <div class="column is-5 is-offset-7">
-            <div class="content my-6 is-relative">
+            <div class="content is-relative">
                <h3 class="title is-4">
                   Logra el éxito como Freelancer en Fiverr
                </h3>
-               <p class="is-size-5">
-                  Inicia tu negocio en casa o un negocio secundario. ¡No se
-                  necesita experiencia!
+               <p class="is-size-6">
+                  Trabaja como freelancer en tu tiempo libre y genera ingresos
+                  en dólares o euros, aprende desde cero.
                </p>
 
-               <a href="/curso-freelancer" class="button is-primary is-medium"
+               <a href="/curso-freelancer" class="button is-primary"
                   >QUIERO UNIRME</a
                >
             </div>
@@ -24,20 +24,26 @@
 </div>
 
 <style>
+
+   .modal {
+      align-items: flex-end;
+      justify-content: flex-end;
+   }
    .modal-content {
       border-radius: 10px;
-      background: url("img/bg-modal.webp") center / cover;
+      background: url("/img/bg-modal.webp") center / cover;
+      margin: 1rem;
+      box-shadow: 0 0 7px #808080c1;
    }
-
+   
    .is-overlay {
       background-color: rgba(240, 255, 255, 0.8);
    }
-
+   
    @media (max-width: 575px) {
       .modal-content {
-         /* background: url("img/bg-modal-mobile.webp") center / cover;
 
-         background-position: 120% center; */
+         width: auto;
       }
    }
 </style>
@@ -66,6 +72,6 @@
 
       setTimeout(() => {
          openModal(modal);
-      }, 4000);
+      }, 1000);
    });
 </script>
